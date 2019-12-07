@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02878ACB239C15660062704E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878ACA239C15660062704E /* AppDelegate.swift */; };
+		02878ACD239C15660062704E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878ACC239C15660062704E /* SceneDelegate.swift */; };
+		02878ACF239C15660062704E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878ACE239C15660062704E /* ContentView.swift */; };
+		02878AD1239C15670062704E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02878AD0239C15670062704E /* Assets.xcassets */; };
+		02878AD4239C15670062704E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02878AD3239C15670062704E /* Preview Assets.xcassets */; };
+		02878AD7239C15670062704E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02878AD5239C15670062704E /* LaunchScreen.storyboard */; };
+		02878AE2239C15680062704E /* OmamamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AE1239C15680062704E /* OmamamaTests.swift */; };
+		02878AED239C15680062704E /* OmamamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AEC239C15680062704E /* OmamamaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02878ADE239C15680062704E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02878ABF239C15660062704E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02878AC6239C15660062704E;
+			remoteInfo = Omamama;
+		};
+		02878AE9239C15680062704E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02878ABF239C15660062704E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02878AC6239C15660062704E;
+			remoteInfo = Omamama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02878AC7239C15660062704E /* Omamama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omamama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02878ACA239C15660062704E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02878ACC239C15660062704E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		02878ACE239C15660062704E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02878AD0239C15670062704E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02878AD3239C15670062704E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02878AD6239C15670062704E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02878AD8239C15670062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02878ADD239C15680062704E /* OmamamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmamamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02878AE1239C15680062704E /* OmamamaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmamamaTests.swift; sourceTree = "<group>"; };
+		02878AE3239C15680062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02878AE8239C15680062704E /* OmamamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmamamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02878AEC239C15680062704E /* OmamamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmamamaUITests.swift; sourceTree = "<group>"; };
+		02878AEE239C15680062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02878AC4239C15660062704E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02878ADA239C15680062704E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02878AE5239C15680062704E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02878ABE239C15660062704E = {
+			isa = PBXGroup;
+			children = (
+				02878AC9239C15660062704E /* Omamama */,
+				02878AE0239C15680062704E /* OmamamaTests */,
+				02878AEB239C15680062704E /* OmamamaUITests */,
+				02878AC8239C15660062704E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02878AC8239C15660062704E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02878AC7239C15660062704E /* Omamama.app */,
+				02878ADD239C15680062704E /* OmamamaTests.xctest */,
+				02878AE8239C15680062704E /* OmamamaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02878AC9239C15660062704E /* Omamama */ = {
+			isa = PBXGroup;
+			children = (
+				02878ACA239C15660062704E /* AppDelegate.swift */,
+				02878ACC239C15660062704E /* SceneDelegate.swift */,
+				02878ACE239C15660062704E /* ContentView.swift */,
+				02878AD0239C15670062704E /* Assets.xcassets */,
+				02878AD5239C15670062704E /* LaunchScreen.storyboard */,
+				02878AD8239C15670062704E /* Info.plist */,
+				02878AD2239C15670062704E /* Preview Content */,
+			);
+			path = Omamama;
+			sourceTree = "<group>";
+		};
+		02878AD2239C15670062704E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02878AD3239C15670062704E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02878AE0239C15680062704E /* OmamamaTests */ = {
+			isa = PBXGroup;
+			children = (
+				02878AE1239C15680062704E /* OmamamaTests.swift */,
+				02878AE3239C15680062704E /* Info.plist */,
+			);
+			path = OmamamaTests;
+			sourceTree = "<group>";
+		};
+		02878AEB239C15680062704E /* OmamamaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02878AEC239C15680062704E /* OmamamaUITests.swift */,
+				02878AEE239C15680062704E /* Info.plist */,
+			);
+			path = OmamamaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02878AC6239C15660062704E /* Omamama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02878AF1239C15680062704E /* Build configuration list for PBXNativeTarget "Omamama" */;
+			buildPhases = (
+				02878AC3239C15660062704E /* Sources */,
+				02878AC4239C15660062704E /* Frameworks */,
+				02878AC5239C15660062704E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Omamama;
+			productName = Omamama;
+			productReference = 02878AC7239C15660062704E /* Omamama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02878ADC239C15680062704E /* OmamamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02878AF4239C15680062704E /* Build configuration list for PBXNativeTarget "OmamamaTests" */;
+			buildPhases = (
+				02878AD9239C15680062704E /* Sources */,
+				02878ADA239C15680062704E /* Frameworks */,
+				02878ADB239C15680062704E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02878ADF239C15680062704E /* PBXTargetDependency */,
+			);
+			name = OmamamaTests;
+			productName = OmamamaTests;
+			productReference = 02878ADD239C15680062704E /* OmamamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02878AE7239C15680062704E /* OmamamaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02878AF7239C15680062704E /* Build configuration list for PBXNativeTarget "OmamamaUITests" */;
+			buildPhases = (
+				02878AE4239C15680062704E /* Sources */,
+				02878AE5239C15680062704E /* Frameworks */,
+				02878AE6239C15680062704E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02878AEA239C15680062704E /* PBXTargetDependency */,
+			);
+			name = OmamamaUITests;
+			productName = OmamamaUITests;
+			productReference = 02878AE8239C15680062704E /* OmamamaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02878ABF239C15660062704E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "shotaro-yamada";
+				TargetAttributes = {
+					02878AC6239C15660062704E = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					02878ADC239C15680062704E = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 02878AC6239C15660062704E;
+					};
+					02878AE7239C15680062704E = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 02878AC6239C15660062704E;
+					};
+				};
+			};
+			buildConfigurationList = 02878AC2239C15660062704E /* Build configuration list for PBXProject "Omamama" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02878ABE239C15660062704E;
+			productRefGroup = 02878AC8239C15660062704E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02878AC6239C15660062704E /* Omamama */,
+				02878ADC239C15680062704E /* OmamamaTests */,
+				02878AE7239C15680062704E /* OmamamaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02878AC5239C15660062704E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02878AD7239C15670062704E /* LaunchScreen.storyboard in Resources */,
+				02878AD4239C15670062704E /* Preview Assets.xcassets in Resources */,
+				02878AD1239C15670062704E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02878ADB239C15680062704E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02878AE6239C15680062704E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02878AC3239C15660062704E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02878ACB239C15660062704E /* AppDelegate.swift in Sources */,
+				02878ACD239C15660062704E /* SceneDelegate.swift in Sources */,
+				02878ACF239C15660062704E /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02878AD9239C15680062704E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02878AE2239C15680062704E /* OmamamaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02878AE4239C15680062704E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02878AED239C15680062704E /* OmamamaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02878ADF239C15680062704E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02878AC6239C15660062704E /* Omamama */;
+			targetProxy = 02878ADE239C15680062704E /* PBXContainerItemProxy */;
+		};
+		02878AEA239C15680062704E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02878AC6239C15660062704E /* Omamama */;
+			targetProxy = 02878AE9239C15680062704E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02878AD5239C15670062704E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02878AD6239C15670062704E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02878AEF239C15680062704E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02878AF0239C15680062704E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02878AF2239C15680062704E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Omamama/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Omamama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = p2hacks.teamR01.Omamama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02878AF3239C15680062704E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Omamama/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Omamama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = p2hacks.teamR01.Omamama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		02878AF5239C15680062704E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmamamaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = p2hacks.teamR01.OmamamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Omamama.app/Omamama";
+			};
+			name = Debug;
+		};
+		02878AF6239C15680062704E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmamamaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = p2hacks.teamR01.OmamamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Omamama.app/Omamama";
+			};
+			name = Release;
+		};
+		02878AF8239C15680062704E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmamamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = p2hacks.teamR01.OmamamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Omamama;
+			};
+			name = Debug;
+		};
+		02878AF9239C15680062704E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmamamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = p2hacks.teamR01.OmamamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Omamama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02878AC2239C15660062704E /* Build configuration list for PBXProject "Omamama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02878AEF239C15680062704E /* Debug */,
+				02878AF0239C15680062704E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02878AF1239C15680062704E /* Build configuration list for PBXNativeTarget "Omamama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02878AF2239C15680062704E /* Debug */,
+				02878AF3239C15680062704E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02878AF4239C15680062704E /* Build configuration list for PBXNativeTarget "OmamamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02878AF5239C15680062704E /* Debug */,
+				02878AF6239C15680062704E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02878AF7239C15680062704E /* Build configuration list for PBXNativeTarget "OmamamaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02878AF8239C15680062704E /* Debug */,
+				02878AF9239C15680062704E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02878ABF239C15660062704E /* Project object */;
+}
