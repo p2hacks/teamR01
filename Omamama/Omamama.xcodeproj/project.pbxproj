@@ -15,6 +15,9 @@
 		02878AD7239C15670062704E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02878AD5239C15670062704E /* LaunchScreen.storyboard */; };
 		02878AE2239C15680062704E /* OmamamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AE1239C15680062704E /* OmamamaTests.swift */; };
 		02878AED239C15680062704E /* OmamamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AEC239C15680062704E /* OmamamaUITests.swift */; };
+		04591A161F890EEF4DE57D4D /* Pods_OmamamaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0496B9EA61D08CB7041C329D /* Pods_OmamamaTests.framework */; };
+		62A7A846AEB07FE81BF2755C /* Pods_Omamama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517522AEA505C1DAED66A20 /* Pods_Omamama.framework */; };
+		D7479B708ADDC77E6B46E015 /* Pods_Omamama_OmamamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA7FAD771931E51C70D085F /* Pods_Omamama_OmamamaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		02878AE8239C15680062704E /* OmamamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmamamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02878AEC239C15680062704E /* OmamamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmamamaUITests.swift; sourceTree = "<group>"; };
 		02878AEE239C15680062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0496B9EA61D08CB7041C329D /* Pods_OmamamaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmamamaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3517522AEA505C1DAED66A20 /* Pods_Omamama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omamama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA7FAD771931E51C70D085F /* Pods_Omamama_OmamamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omamama_OmamamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		455872452C320581D5B1686C /* Pods-Omamama-OmamamaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omamama-OmamamaUITests.release.xcconfig"; path = "Target Support Files/Pods-Omamama-OmamamaUITests/Pods-Omamama-OmamamaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		825328D3EF690E53D9ED1930 /* Pods-Omamama-OmamamaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omamama-OmamamaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Omamama-OmamamaUITests/Pods-Omamama-OmamamaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		877DDBB6F47B4E45EC3A1C60 /* Pods-OmamamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmamamaTests.debug.xcconfig"; path = "Target Support Files/Pods-OmamamaTests/Pods-OmamamaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7874F7F0B80A47E2F522283 /* Pods-Omamama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omamama.release.xcconfig"; path = "Target Support Files/Pods-Omamama/Pods-Omamama.release.xcconfig"; sourceTree = "<group>"; };
+		AFC6CC8703D29D17D1E94512 /* Pods-OmamamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmamamaTests.release.xcconfig"; path = "Target Support Files/Pods-OmamamaTests/Pods-OmamamaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB9DAFE3144E7C1DD05240ED /* Pods-Omamama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omamama.debug.xcconfig"; path = "Target Support Files/Pods-Omamama/Pods-Omamama.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A7A846AEB07FE81BF2755C /* Pods_Omamama.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04591A161F890EEF4DE57D4D /* Pods_OmamamaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7479B708ADDC77E6B46E015 /* Pods_Omamama_OmamamaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				02878AE0239C15680062704E /* OmamamaTests */,
 				02878AEB239C15680062704E /* OmamamaUITests */,
 				02878AC8239C15660062704E /* Products */,
+				E07B4E9DF15AE32018DAB5B9 /* Pods */,
+				D7EE34F141F3C7B1761CE54C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +153,30 @@
 			path = OmamamaUITests;
 			sourceTree = "<group>";
 		};
+		D7EE34F141F3C7B1761CE54C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3517522AEA505C1DAED66A20 /* Pods_Omamama.framework */,
+				3DA7FAD771931E51C70D085F /* Pods_Omamama_OmamamaUITests.framework */,
+				0496B9EA61D08CB7041C329D /* Pods_OmamamaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E07B4E9DF15AE32018DAB5B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB9DAFE3144E7C1DD05240ED /* Pods-Omamama.debug.xcconfig */,
+				A7874F7F0B80A47E2F522283 /* Pods-Omamama.release.xcconfig */,
+				825328D3EF690E53D9ED1930 /* Pods-Omamama-OmamamaUITests.debug.xcconfig */,
+				455872452C320581D5B1686C /* Pods-Omamama-OmamamaUITests.release.xcconfig */,
+				877DDBB6F47B4E45EC3A1C60 /* Pods-OmamamaTests.debug.xcconfig */,
+				AFC6CC8703D29D17D1E94512 /* Pods-OmamamaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02878AF1239C15680062704E /* Build configuration list for PBXNativeTarget "Omamama" */;
 			buildPhases = (
+				0209C2EE581BEF53CEA09337 /* [CP] Check Pods Manifest.lock */,
 				02878AC3239C15660062704E /* Sources */,
 				02878AC4239C15660062704E /* Frameworks */,
 				02878AC5239C15660062704E /* Resources */,
+				C650F314EDA3C0EF2C0114C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02878AF4239C15680062704E /* Build configuration list for PBXNativeTarget "OmamamaTests" */;
 			buildPhases = (
+				077F4C71BD0EDAE09C87F713 /* [CP] Check Pods Manifest.lock */,
 				02878AD9239C15680062704E /* Sources */,
 				02878ADA239C15680062704E /* Frameworks */,
 				02878ADB239C15680062704E /* Resources */,
@@ -178,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02878AF7239C15680062704E /* Build configuration list for PBXNativeTarget "OmamamaUITests" */;
 			buildPhases = (
+				5CB0A558D82E49E56C1467C8 /* [CP] Check Pods Manifest.lock */,
 				02878AE4239C15680062704E /* Sources */,
 				02878AE5239C15680062704E /* Frameworks */,
 				02878AE6239C15680062704E /* Resources */,
+				C844E242D019FAC45B1A699A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +307,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0209C2EE581BEF53CEA09337 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Omamama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		077F4C71BD0EDAE09C87F713 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmamamaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CB0A558D82E49E56C1467C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Omamama-OmamamaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C650F314EDA3C0EF2C0114C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Omamama/Pods-Omamama-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Omamama/Pods-Omamama-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Omamama/Pods-Omamama-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C844E242D019FAC45B1A699A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Omamama-OmamamaUITests/Pods-Omamama-OmamamaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Omamama-OmamamaUITests/Pods-Omamama-OmamamaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Omamama-OmamamaUITests/Pods-Omamama-OmamamaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02878AC3239C15660062704E /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		02878AF2239C15680062704E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB9DAFE3144E7C1DD05240ED /* Pods-Omamama.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +601,7 @@
 		};
 		02878AF3239C15680062704E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7874F7F0B80A47E2F522283 /* Pods-Omamama.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +621,7 @@
 		};
 		02878AF5239C15680062704E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 877DDBB6F47B4E45EC3A1C60 /* Pods-OmamamaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +643,7 @@
 		};
 		02878AF6239C15680062704E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC6CC8703D29D17D1E94512 /* Pods-OmamamaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +665,7 @@
 		};
 		02878AF8239C15680062704E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825328D3EF690E53D9ED1930 /* Pods-Omamama-OmamamaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +685,7 @@
 		};
 		02878AF9239C15680062704E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455872452C320581D5B1686C /* Pods-Omamama-OmamamaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
