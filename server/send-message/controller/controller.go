@@ -5,7 +5,6 @@ import(
 	"github.com/p2hacks/teamR01/server/send-message/model"
 	"github.com/jinzhu/gorm"
 	_"github.com/jinzhu/gorm/dialects/mysql"
-	"strconv"
 	"net/http"
 )
 
@@ -19,6 +18,7 @@ POSTでユーザーIDと送るメッセージを受け取る
 */
 
 func (ctrl *IsController) MessageHandler(c echo.Context)error{
+	var db *gorm.DB
 	var post model.User
 	var res model.Status
 	err := c.Bind(post)
@@ -26,7 +26,11 @@ func (ctrl *IsController) MessageHandler(c echo.Context)error{
 		res.STATUS = false
 		return c.JSON(http.StatusBadRequest, res.STATUS)
 	}
-	ctrl.DB.Create(&post)
+	db.Create(&post)//??
 	res.STATUS = true 
 	return c.JSON(http.StatusOK,res.STATUS)
+}
+
+func InitController(db *gorm.DB) IsController {
+	return IsController{DB: db}
 }
