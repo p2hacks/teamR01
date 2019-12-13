@@ -20,8 +20,6 @@ func main() {
 		log.Fatalf("failed initialize db. err=%s", err)
 	}
 
-	defer db.Close()
-
 	ctrl = initializeController(db)
 	router := setupRouter(ctrl)
 	err = router.Run(":9000")
@@ -39,7 +37,7 @@ func initializeDataBase() (*gorm.DB, error){
 	count = 1
 	for {
 		if count > 5 {
-			return nil, fmt.Errorf("")
+			return nil, fmt.Errorf("faild mysql connection")
 		}
 		db, err = gorm.Open("mysql", token)
 		if err == nil {

@@ -16,7 +16,7 @@ type dataBaseConfig struct {
 
 var c dataBaseConfig
 
-const accessTokenTemplate = "%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local"
+const accessTokenTemplate = "%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local"
 
 func init() {
 	c = dataBaseConfig {

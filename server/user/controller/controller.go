@@ -16,7 +16,10 @@ type IsController struct {
 
 func (ctrl *IsController)SetUserInfo(context *gin.Context) {
 	var request model.Request
+	var user, test model.User
+	var id []byte
 
+	// var id string
 	err := context.BindJSON(&request)
 	if err != nil {
 		context.JSON(http.StatusInternalServerError, gin.H{
@@ -26,15 +29,7 @@ func (ctrl *IsController)SetUserInfo(context *gin.Context) {
 		return
 	}
 
-	user := model.User{
-		NAME: request.NAME,
-		POSTALF: request.POSTALF,
-		POSTALL: request.POSTALL,
-		STATE: request.STATE,
-		ADDRESS: request.ADDRESS,
-		PHONE: request.PHONE,
-	}
-	user.ID, err = service.CreateUserId(request.PHONE)
+	id, err = service.CreateUserId(request.PHONE)
 	if err != nil {
 		context.JSON(http.StatusInternalServerError, gin.H{
 			"status": false,
@@ -43,7 +38,14 @@ func (ctrl *IsController)SetUserInfo(context *gin.Context) {
 		return
 	}
 
+	user = model.User{
+		ID: id,
+		PHONE: request.PHONE,
+	}
+
 	ctrl.DB.Create(&user)
 
-	context.JSON(http.StatusOK, gin.H{"status": true, "err": ""})
+	ctrl.DB.Find(&test, "id=?", id)
+
+	context.JSON(http.StatusOK, gin.H{"status": true, "err": test})
 }
