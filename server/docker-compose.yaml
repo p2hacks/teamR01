@@ -1,0 +1,26 @@
+version: '3'
+services:
+        mysql:
+                image: mysql:5.7
+                ports:
+                        - 3306:3306
+                volumes:
+                        - db-data=/var/lib/mysql
+                environment:
+                        - MYSQL_ROOT_PASSWORD=rootpass
+                        - MYSQL_DATABASE=omamama
+                        - MYSQL_USER=omamama
+                        - MYSQL_PASSWORD=8Q*AvwuZKNcqdEPKJWy6ZHyNw_Th-fj_BRdtT_L-EUKQmGXVD3dF7ZsKVa4YfP!n
+        user:
+                build: ./user
+                ports:
+                        - 9000:9000
+                environment:
+                        - DB_USER=omamama
+                        - DB_PASS=8Q*AvwuZKNcqdEPKJWy6ZHyNw_Th-fj_BRdtT_L-EUKQmGXVD3dF7ZsKVa4YfP!n
+                        - DB_IP=mysql
+                        - DB_PORT=3306
+                        - DB_NAME=omamama
+                        - CHYPHER_KEY=RaJ_GCdicC27ABxGQPD-7N@ri3RYqcgR
+                depends_on:
+                        - 'mysql'
