@@ -24,3 +24,11 @@ services:
                         - CHYPHER_KEY=RaJ_GCdicC27ABxGQPD-7N@ri3RYqcgR
                 depends_on:
                         - 'mysql'
+        bff-api:
+                build: ./bff
+                ports:
+                        - 4000:4000
+                environment:
+                        - USER=http://user:9000
+                depends_on:
+                        - 'user'
