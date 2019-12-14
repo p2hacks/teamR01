@@ -16,5 +16,8 @@ module.exports = {
         getPair: async (_source, { id },{ dataSources }) => {
             return dataSources.GetPairAPI.getPair(id);
         },
+        setCardInfo: async (_source, { id, num, year, month, code, name },{ dataSources }) => {
+            return dataSources.SetCardInfoAPI.setCardInfo(id, num, year, month, code, name);
+        },
     },
 };
