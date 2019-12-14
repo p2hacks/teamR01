@@ -14,14 +14,13 @@ type IsController struct {
 
 // test struct
 type User struct {
-	ID			[]byte
+	ID			string
 	PHONE		string `gorm:"type:varchar(11);"`
 }
 
 func (ctrl *IsController)SetRateInfo(context *gin.Context) {
 	var request, rate model.Rate
 	var user User
-	var id string
 
 	// var id string
 	err := context.BindJSON(&request)
@@ -34,7 +33,7 @@ func (ctrl *IsController)SetRateInfo(context *gin.Context) {
 	}
 
 	ctrl.DB.Table("users").Find(&user, "id=?", request.ID)
-	if user.ID == nil {
+	if user.ID == "" {
 		setRate := model.SetRate{
 			STATUS: false,
 		}
@@ -43,7 +42,7 @@ func (ctrl *IsController)SetRateInfo(context *gin.Context) {
 	}
 
 	rate = model.Rate{
-		ID: id,
+		ID: user.ID,
 		RATE: request.RATE,
 	}
 
