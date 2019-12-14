@@ -4,5 +4,8 @@ module.exports = {
         setUser: async (_source, { phone },{ dataSources }) => {
             return dataSources.UserAPI.setUser(phone);
         },
+        setRate: async (_source, { id, rate },{ dataSources }) => {
+            return dataSources.RateAPI.setRate(id, rate);
+        },
     },
 };

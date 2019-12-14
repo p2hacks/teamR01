@@ -8,9 +8,9 @@ import(
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/p2hacks/teamR01/server/user/config"
-	"github.com/p2hacks/teamR01/server/user/controller"
-	"github.com/p2hacks/teamR01/server/user/model"
+	"github.com/p2hacks/teamR01/server/rate/config"
+	"github.com/p2hacks/teamR01/server/rate/controller"
+	"github.com/p2hacks/teamR01/server/rate/model"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 
 	ctrl = initializeController(db)
 	router := setupRouter(ctrl)
-	err = router.Run(":9000")
+	err = router.Run(":9001")
 	if err != nil {
 		log.Fatalf("failed launch router. err=%s", err)
 	}
@@ -43,7 +43,7 @@ func initializeDataBase() (*gorm.DB, error){
 		}
 		db, err = gorm.Open("mysql", token)
 		if err == nil {
-			db.AutoMigrate(&model.User{})
+			db.AutoMigrate(&model.Rate{})
 			return db, nil
 		}
 		time.Sleep(3 * time.Second)
@@ -61,8 +61,8 @@ func initializeController(db *gorm.DB) (controller.IsController){
 func setupRouter(ctrl controller.IsController) *gin.Engine {
 	router := gin.Default()
 	router.GET("/", func(c *gin.Context){
-		c.JSON(http.StatusOK, gin.H{"message": "This is User API"})
+		c.JSON(http.StatusOK, gin.H{"message": "This is Rate API"})
 	})
-	router.POST("/set", ctrl.SetUserInfo)
+	router.POST("/set", ctrl.SetRateInfo)
 	return router
 }

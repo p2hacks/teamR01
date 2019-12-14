@@ -19,6 +19,20 @@ class UserAPI extends RESTDataSource {
   }
 }
 
+class RateAPI extends RESTDataSource {
+  constructor() {
+    super();
+    this.baseURL = process.env.RATE;
+  }
+
+  async setRate(userId, userRate) {
+    return this.post(
+        `set`,
+        { id: userId, rate: userRate },
+      );
+  }
+}
+
 // graphQLの初期化
 const server = new ApolloServer({
   typeDefs,
@@ -27,6 +41,7 @@ const server = new ApolloServer({
     return {
         // MicroServiceに対するリクエスト処理のインスタンスを追加
         UserAPI: new UserAPI(),
+        RateAPI: new RateAPI(),
     };
   },
 });
