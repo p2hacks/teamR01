@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		02878ACB239C15660062704E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878ACA239C15660062704E /* AppDelegate.swift */; };
 		02878ACD239C15660062704E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878ACC239C15660062704E /* SceneDelegate.swift */; };
-		02878ACF239C15660062704E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878ACE239C15660062704E /* ContentView.swift */; };
 		02878AD1239C15670062704E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02878AD0239C15670062704E /* Assets.xcassets */; };
 		02878AD4239C15670062704E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02878AD3239C15670062704E /* Preview Assets.xcassets */; };
 		02878AD7239C15670062704E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02878AD5239C15670062704E /* LaunchScreen.storyboard */; };
 		02878AE2239C15680062704E /* OmamamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AE1239C15680062704E /* OmamamaTests.swift */; };
 		02878AED239C15680062704E /* OmamamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AEC239C15680062704E /* OmamamaUITests.swift */; };
-		DA9634E323A289AA002CF568 /* Frame 1icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9634E223A289AA002CF568 /* Frame 1icon.png */; };
-		DA9634E923A28B98002CF568 /* 待機画面.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DA9634E823A28B98002CF568 /* 待機画面.jpeg */; };
+		B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */; };
+		B01A677823A4BBD70009D2C1 /* SelectGift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */; };
+		B01A677C23A4BC450009D2C1 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = B01A677B23A4BC450009D2C1 /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		02878AC7239C15660062704E /* Omamama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omamama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02878ACA239C15660062704E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02878ACC239C15660062704E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02878ACE239C15660062704E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02878AD0239C15670062704E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02878AD3239C15670062704E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02878AD6239C15670062704E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,8 +50,9 @@
 		02878AE8239C15680062704E /* OmamamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmamamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02878AEC239C15680062704E /* OmamamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmamamaUITests.swift; sourceTree = "<group>"; };
 		02878AEE239C15680062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA9634E223A289AA002CF568 /* Frame 1icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Frame 1icon.png"; path = "../../../Frame 1icon.png"; sourceTree = "<group>"; };
-		DA9634E823A28B98002CF568 /* 待機画面.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "待機画面.jpeg"; path = "../../../待機画面.jpeg"; sourceTree = "<group>"; };
+		B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userRegistrationPage.swift; sourceTree = "<group>"; };
+		B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectGift.storyboard; sourceTree = "<group>"; };
+		B01A677B23A4BC450009D2C1 /* Resources */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Resources; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,6 @@
 		02878ABE239C15660062704E = {
 			isa = PBXGroup;
 			children = (
-				DA9634E123A28990002CF568 /* Resources */,
 				02878AC9239C15660062704E /* Omamama */,
 				02878AE0239C15680062704E /* OmamamaTests */,
 				02878AEB239C15680062704E /* OmamamaUITests */,
@@ -104,9 +103,11 @@
 		02878AC9239C15660062704E /* Omamama */ = {
 			isa = PBXGroup;
 			children = (
+				B01A677B23A4BC450009D2C1 /* Resources */,
 				02878ACA239C15660062704E /* AppDelegate.swift */,
 				02878ACC239C15660062704E /* SceneDelegate.swift */,
-				02878ACE239C15660062704E /* ContentView.swift */,
+				B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */,
+				B01A677623A4BA8C0009D2C1 /* SelectGift */,
 				02878AD0239C15670062704E /* Assets.xcassets */,
 				02878AD5239C15670062704E /* LaunchScreen.storyboard */,
 				02878AD8239C15670062704E /* Info.plist */,
@@ -141,13 +142,12 @@
 			path = OmamamaUITests;
 			sourceTree = "<group>";
 		};
-		DA9634E123A28990002CF568 /* Resources */ = {
+		B01A677623A4BA8C0009D2C1 /* SelectGift */ = {
 			isa = PBXGroup;
 			children = (
-				DA9634E223A289AA002CF568 /* Frame 1icon.png */,
-				DA9634E823A28B98002CF568 /* 待機画面.jpeg */,
+				B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */,
 			);
-			path = Resources;
+			name = SelectGift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,10 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				02878AD7239C15670062704E /* LaunchScreen.storyboard in Resources */,
-				DA9634E923A28B98002CF568 /* 待機画面.jpeg in Resources */,
 				02878AD4239C15670062704E /* Preview Assets.xcassets in Resources */,
+				B01A677823A4BBD70009D2C1 /* SelectGift.storyboard in Resources */,
 				02878AD1239C15670062704E /* Assets.xcassets in Resources */,
-				DA9634E323A289AA002CF568 /* Frame 1icon.png in Resources */,
+				B01A677C23A4BC450009D2C1 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */,
 				02878ACB239C15660062704E /* AppDelegate.swift in Sources */,
 				02878ACD239C15660062704E /* SceneDelegate.swift in Sources */,
-				02878ACF239C15660062704E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Omamama/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Omamama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Omamama/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Omamama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
