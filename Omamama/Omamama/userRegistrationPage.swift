@@ -22,41 +22,43 @@ struct userRegistrationView: View {
         VStack(spacing: 5){
             Text("ユーザー登録")
                 .font(.largeTitle)
-                VStack(alignment: .leading, spacing: 20){
-                    Text("氏名")
-                        .font(.headline)
-                    TextField("氏名を入力してください", text: $name)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Text("郵便番号")
-                        .font(.headline)
-                        .padding()
-                    HStack(){
-                        TextField("000", text: $firstPostalCode)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        Text("-")
-                        TextField("0000", text: $lastPostalCode)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        
-                    }
-                    Text("住所")
-                        .font(.headline)
-                    HStack{
-                        Picker("都道府県", selection: $selectedPrefecture) {
-                            ForEach(0..<JapanesePrefecture.all.count, id: \.self) { index in
-                                Text(JapanesePrefecture(rawValue: index)!.nameWithSuffix).tag(index)
-                            }
-                        }
-                        .frame(width: 100, height: 80)
-                       TextField("", text: $address)
-                                               .textFieldStyle(RoundedBorderTextFieldStyle())
-                    }
-                    Spacer()
-                }
-                Text("電話番号")
+            VStack(alignment: .leading, spacing: 20){
+                Text("氏名")
                     .font(.headline)
-                TextField("", text: $phoneNumber)
+                TextField("氏名を入力してください", text: $name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                Text("郵便番号")
+                    .font(.headline)
+                    .padding()
+                HStack(){
+                    TextField("000", text: $firstPostalCode)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(width: 100)
+                    Text("-")
+                    TextField("0000", text: $lastPostalCode)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(width: 100)
+                    
+                }
+                Text("住所")
+                    .font(.headline)
+                HStack{
+                    Picker("都道府県", selection: $selectedPrefecture) {
+                        ForEach(0..<JapanesePrefecture.all.count, id: \.self) { index in
+                            Text(JapanesePrefecture(rawValue: index)!.nameWithSuffix).tag(index)
+                        }
+                    }
+                    .frame(width: 100, height: 80)
+                    TextField("", text: $address)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
                 Spacer()
+            }
+            Text("電話番号")
+                .font(.headline)
+            TextField("", text: $phoneNumber)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Spacer()
             Button(action: {}){
                 Text("次へ")
                     .font(.body)
@@ -77,12 +79,12 @@ struct userRegistrationView: View {
 /*
  raw valueはtable view等でindex等からcaseを作成するために、0からスタート。
  都道府県のidは1から始まる連番なので、raw valueをそのままidとしては使えない。
-*/
+ */
 enum JapanesePrefecture: Int {
-
+    
     // 北海道
     case hokkaido
-
+    
     // 東北
     case aomori
     case iwate
@@ -90,7 +92,7 @@ enum JapanesePrefecture: Int {
     case akita
     case yamagata
     case fukushima
-
+    
     // 関東
     case ibaraki
     case tochigi
@@ -99,7 +101,7 @@ enum JapanesePrefecture: Int {
     case chiba
     case tokyo
     case kanagawa
-
+    
     // 中部
     case niigata
     case toyama
@@ -110,7 +112,7 @@ enum JapanesePrefecture: Int {
     case gifu
     case shizuoka
     case aichi
-
+    
     // 関西
     case mie
     case shiga
@@ -119,20 +121,20 @@ enum JapanesePrefecture: Int {
     case hyogo
     case nara
     case wakayama
-
+    
     // 中国
     case tottori
     case shimane
     case okayama
     case hiroshima
     case yamaguchi
-
+    
     //　四国
     case tokushima
     case kagawa
     case ehime
     case kochi
-
+    
     // 九州
     case fukuoka
     case saga
@@ -142,24 +144,24 @@ enum JapanesePrefecture: Int {
     case miyazaki
     case kagoshima
     case okinawa
-
-
+    
+    
     /*
      都道府県に振り分けられたidは1から始まる連番。raw valueと同じではない点に注意。
-    */
+     */
     var id: Int { return self.rawValue + 1 }
-
-
+    
+    
     /*
      suffix(都、府、県)を取り除いた文字列。
      北海道は"道"をつけたままの文字列。
-    */
+     */
     var name: String {
         switch self {
-
+            
         // 北海道
         case .hokkaido: return "北海道"
-
+            
         // 東北
         case .aomori   : return "青森"
         case .iwate    : return "岩手"
@@ -167,7 +169,7 @@ enum JapanesePrefecture: Int {
         case .akita    : return "秋田"
         case .yamagata : return "山形"
         case .fukushima: return "福島"
-
+            
         // 関東
         case .ibaraki : return "茨城"
         case .tochigi : return "栃木"
@@ -176,7 +178,7 @@ enum JapanesePrefecture: Int {
         case .chiba   : return "千葉"
         case .tokyo   : return "東京"
         case .kanagawa: return "神奈川"
-
+            
         // 中部
         case .niigata  : return "新潟"
         case .toyama   : return "富山"
@@ -187,7 +189,7 @@ enum JapanesePrefecture: Int {
         case .gifu     : return "岐阜"
         case .shizuoka : return "静岡"
         case .aichi    : return "愛知"
-
+            
         // 関西
         case .mie     : return "三重"
         case .shiga   : return "滋賀"
@@ -196,20 +198,20 @@ enum JapanesePrefecture: Int {
         case .hyogo   : return "兵庫"
         case .nara    : return "奈良"
         case .wakayama: return "和歌山"
-
+            
         // 中国
         case .tottori  : return "鳥取"
         case .shimane  : return "島根"
         case .okayama  : return "岡山"
         case .hiroshima: return "広島"
         case .yamaguchi: return "山口"
-
+            
         // 四国
         case .tokushima: return "徳島"
         case .kagawa   : return "香川"
         case .ehime    : return "愛媛"
         case .kochi    : return "高知"
-
+            
         // 九州
         case .fukuoka  : return "福岡"
         case .saga     : return "佐賀"
@@ -221,18 +223,18 @@ enum JapanesePrefecture: Int {
         case .okinawa  : return "沖縄"
         }
     }
-
+    
     /*
      nameに"都、府、県"を追加した文字列。
      北海道はname, nameWithSuffix共に同一の文字列"北海道"が返る。
-    */
+     */
     var nameWithSuffix: String {
         switch self {
         case .hokkaido: return self.name
         default: return self.name + self.suffix
         }
     }
-
+    
     var suffix: String {
         switch self {
         case .hokkaido     : return "道"
@@ -241,71 +243,71 @@ enum JapanesePrefecture: Int {
         default            : return "県"
         }
     }
-
+    
     static var all: [JapanesePrefecture] {
         return [
-        // 北海道
-        .hokkaido,
-
-        // 東北
-        .aomori,
-        .iwate,
-        .miyagi,
-        .akita,
-        .yamagata,
-        .fukushima,
-
-        // 関東
-        .ibaraki,
-        .tochigi,
-        .gunma,
-        .saitama,
-        .chiba,
-        .tokyo,
-        .kanagawa,
-
-        // 中部
-        .niigata,
-        .toyama,
-        .ishikawa,
-        .fukui,
-        .yamanashi,
-        .nagano,
-        .gifu,
-        .shizuoka,
-        .aichi,
-
-        // 関西
-        .mie,
-        .shiga,
-        .kyoto,
-        .osaka,
-        .hyogo,
-        .nara,
-        .wakayama,
-
-        // 中国
-        .tottori,
-        .shimane,
-        .okayama,
-        .hiroshima,
-        .yamaguchi,
-
-        //　四国
-        .tokushima,
-        .kagawa,
-        .ehime,
-        .kochi,
-
-        // 九州
-        .fukuoka,
-        .saga,
-        .nagasaki,
-        .kumamoto,
-        .oita,
-        .miyazaki,
-        .kagoshima,
-        .okinawa,
+            // 北海道
+            .hokkaido,
+            
+            // 東北
+            .aomori,
+            .iwate,
+            .miyagi,
+            .akita,
+            .yamagata,
+            .fukushima,
+            
+            // 関東
+            .ibaraki,
+            .tochigi,
+            .gunma,
+            .saitama,
+            .chiba,
+            .tokyo,
+            .kanagawa,
+            
+            // 中部
+            .niigata,
+            .toyama,
+            .ishikawa,
+            .fukui,
+            .yamanashi,
+            .nagano,
+            .gifu,
+            .shizuoka,
+            .aichi,
+            
+            // 関西
+            .mie,
+            .shiga,
+            .kyoto,
+            .osaka,
+            .hyogo,
+            .nara,
+            .wakayama,
+            
+            // 中国
+            .tottori,
+            .shimane,
+            .okayama,
+            .hiroshima,
+            .yamaguchi,
+            
+            //　四国
+            .tokushima,
+            .kagawa,
+            .ehime,
+            .kochi,
+            
+            // 九州
+            .fukuoka,
+            .saga,
+            .nagasaki,
+            .kumamoto,
+            .oita,
+            .miyazaki,
+            .kagoshima,
+            .okinawa,
         ]
     }
 }

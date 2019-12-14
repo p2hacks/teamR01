@@ -16,6 +16,7 @@
 		02878AED239C15680062704E /* OmamamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AEC239C15680062704E /* OmamamaUITests.swift */; };
 		B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */; };
 		B01A677823A4BBD70009D2C1 /* SelectGift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */; };
+		DA3F52B023A51B4C00006697 /* cardInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F52AF23A51B4C00006697 /* cardInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		02878AEE239C15680062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userRegistrationPage.swift; sourceTree = "<group>"; };
 		B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectGift.storyboard; sourceTree = "<group>"; };
+		DA3F52AF23A51B4C00006697 /* cardInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,7 @@
 			children = (
 				02878ACA239C15660062704E /* AppDelegate.swift */,
 				02878ACC239C15660062704E /* SceneDelegate.swift */,
-				B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */,
+				DA3F52AE23A5193900006697 /* New Group */,
 				B01A677623A4BA8C0009D2C1 /* SelectGift */,
 				02878AD0239C15670062704E /* Assets.xcassets */,
 				02878AD5239C15670062704E /* LaunchScreen.storyboard */,
@@ -145,6 +147,15 @@
 				B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */,
 			);
 			name = SelectGift;
+			sourceTree = "<group>";
+		};
+		DA3F52AE23A5193900006697 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */,
+				DA3F52AF23A51B4C00006697 /* cardInformation.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3F52B023A51B4C00006697 /* cardInformation.swift in Sources */,
 				B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */,
 				02878ACB239C15660062704E /* AppDelegate.swift in Sources */,
 				02878ACD239C15660062704E /* SceneDelegate.swift in Sources */,
