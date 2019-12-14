@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 final class SendGiftViewController: UIViewController,  WKNavigationDelegate{
-//URL:http://images-jp.amazon.com/images/P/[ASIN,ISBN].[国コード].[画像の種類].jpg
+//url:http://images-jp.amazon.com/images/P/[ASIN,ISBN].[国コード].[画像の種類].jpg
     
     @IBOutlet final weak var BackgroundImage: UIImageView!
     
