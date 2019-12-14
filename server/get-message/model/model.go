@@ -1,20 +1,20 @@
 package model
 
 type Message struct {
-	ID      string 
-	MESSAGE string  
+	ID      string
+	MESSAGE string
 }
 
-type Pair struct{
-	SANTA string
-	CHILD string
+type Pair struct {
+	SANTA string `json:"santa"`
+	CHILD string `json:"child"`
 }
 
-type Request struct{
+type Request struct {
 	ID string
 }
 
-type Response struct{
+type Response struct {
 	MESSAGE string
-	STATUS bool
+	STATUS  bool
 }

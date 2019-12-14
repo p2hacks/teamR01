@@ -1,11 +1,13 @@
 package controller
 
 import (
+	"log"
+	"net/http"
+
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/labstack/echo"
 	"github.com/p2hacks/teamR01/server/get-message/model"
-	"net/http"
 )
 
 type IsController struct {
@@ -30,18 +32,18 @@ func (ctrl *IsController) MessageHandler(c echo.Context) error {
 		res.STATUS = false
 		return c.JSON(http.StatusBadRequest, res)
 	}
-	//TODO: reqをSANTAに代入、SANTA(req.ID)でpairからCHILDを引っ張ってくる
-	ctrl.DB.Table("pairs").Find(&pair, "id=?", req.ID)
+	//TODO: reqをSANTAに代入、SANTAでpairからCHILDを引っ張ってくる
+	ctrl.DB.Table("pairs").Find(&pair, "santa=?", req.ID)
 	//// SELECT * FROM pairs WHERE id = req.ID ;
 
 	//CHILDでmessageを検索
-	ctrl.DB.Table("messages").Find(&message, "message=?", pair.CHILD)
-
+	ctrl.DB.Table("messages").First(&message, "id=?", pair.CHILD)
+	log.Println(message)
 	//Responseとして返すmessageとstatusを更新する。
 	res.MESSAGE = message.MESSAGE
 	res.STATUS = true
 
-	return c.JSON(http.StatusOK, res)
+	return c.JSON(http.StatusOK, message.MESSAGE)
 }
 
 func InitController(db *gorm.DB) IsController {
