@@ -15,6 +15,10 @@ module.exports = gql`
   type SendMessage {
     STATUS: Boolean!
   }
+  type GetMessage {
+    STATUS: Boolean!
+    MESSAGE: String
+  }
   type GetPair {
     STATUS: Boolean!
     ASIN: String
@@ -27,6 +31,7 @@ module.exports = gql`
     setRate(id: String!, rate: Int!): Rate
     setPresent(id: String, asin: String!): Present
     setMessage(id: String!, message: String): SendMessage
+    getMessage(id: String!): GetMessage
     getPair(id: String!): GetPair
     setCardInfo(id: String!, , num: String!, year: String!, month: String!, code: String!, name: String!): SetCard!
   }

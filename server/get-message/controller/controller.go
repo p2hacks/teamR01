@@ -1,9 +1,7 @@
 package controller
 
 import (
-	"log"
 	"net/http"
-
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/labstack/echo"
@@ -34,11 +32,10 @@ func (ctrl *IsController) MessageHandler(c echo.Context) error {
 	}
 	//TODO: reqをSANTAに代入、SANTAでpairからCHILDを引っ張ってくる
 	ctrl.DB.Table("pairs").Find(&pair, "santa=?", req.ID)
-	//// SELECT * FROM pairs WHERE id = req.ID ;
 
 	//CHILDでmessageを検索
 	ctrl.DB.Table("messages").First(&message, "id=?", pair.CHILD)
-	log.Println(message)
+
 	//Responseとして返すmessageとstatusを更新する。
 	res.MESSAGE = message.MESSAGE
 	res.STATUS = true
