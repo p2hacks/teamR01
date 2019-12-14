@@ -16,14 +16,14 @@ type IsController struct {
 func (ctrl *IsController)SetUserInfo(context *gin.Context) {
 	var request model.Request
 	var user model.User
-	var id []byte
+	var id string
 
 	// var id string
 	err := context.BindJSON(&request)
 	if err != nil {
 		setUser := model.SetUser{
 			STATUS: false,
-			ID: nil,
+			ID: "",
 		}
 		context.JSON(http.StatusInternalServerError, gin.H{"setUser": setUser})
 		return
@@ -33,7 +33,7 @@ func (ctrl *IsController)SetUserInfo(context *gin.Context) {
 	if err != nil {
 		setUser := model.SetUser{
 			STATUS: false,
-			ID: nil,
+			ID: "",
 		}
 		context.JSON(http.StatusInternalServerError, gin.H{"setUser": setUser})
 		return

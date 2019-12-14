@@ -20,6 +20,8 @@ func main() {
 		log.Fatalf("failed initialize db. err=%s", err)
 	}
 
+	defer db.Close()
+
 	ctrl = initializeController(db)
 	router := setupRouter(ctrl)
 	err = router.Run(":9000")
