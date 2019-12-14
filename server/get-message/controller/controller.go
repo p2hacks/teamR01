@@ -19,7 +19,7 @@ POSTで受け取ったidでpairsから、マッチングしているidを取得�
 */
 
 func (ctrl *IsController) MessageHandler(c echo.Context) error {
-	var req mode.Request
+	var req model.Request
 	var pair model.Pair
 	var message model.Message
 	var res model.Response
@@ -31,16 +31,16 @@ func (ctrl *IsController) MessageHandler(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, res)
 	}
 	//TODO: reqをSANTAに代入、SANTA(req.ID)でpairからCHILDを引っ張ってくる
-	ctrl.DB.Table("pairs").Find(&pair,"id=?",req.ID)
+	ctrl.DB.Table("pairs").Find(&pair, "id=?", req.ID)
 	//// SELECT * FROM pairs WHERE id = req.ID ;
 
 	//CHILDでmessageを検索
-	ctrl.DB.Table("messages").Find(&message,"message=?",pair.CHILD)
-	
+	ctrl.DB.Table("messages").Find(&message, "message=?", pair.CHILD)
+
 	//Responseとして返すmessageとstatusを更新する。
-	res.Message=message.Message
-	res.Status=true
-	
+	res.MESSAGE = message.MESSAGE
+	res.STATUS = true
+
 	return c.JSON(http.StatusOK, res)
 }
 
