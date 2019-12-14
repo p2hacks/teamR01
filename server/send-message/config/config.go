@@ -18,6 +18,8 @@ var c dataBaseConfig
 const accessTokenTemplate = "%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local"
 
 func init() {
+	/*
+	//コンテナ化前デバック用
 	c = dataBaseConfig {
 		User: "root",
 		Pass: "p2hack",
@@ -25,14 +27,14 @@ func init() {
 		Port: "3306",
 		Name: "omamama",
 	}
-	/*
+	*/
 	c = dataBaseConfig {
 		User: os.Getenv("DB_USER"),
 		Pass: os.Getenv("DB_PASS"),
 		IP	: os.Getenv("DB_IP"),
 		Port: os.Getenv("DB_PORT"),
 		Name: os.Getenv("DB_NAME"),
-	}*/
+	}
 
 	err := checkElements(c)
 	if err != nil {
