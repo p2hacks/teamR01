@@ -8,12 +8,21 @@
 
 import UIKit
 
-class SelectRateViewController: UIViewController {
+final class SelectRateViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func LowRateButton(_ sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let selectgiftView = storyboard.instantiateViewController(withIdentifier: "selectgift") as! SelectGiftViewController
+        self.present(selectgiftView, animated: true, completion: nil)
+    }
+    @IBAction func MiddleRateButton(_ sender: Any) {
+    }
+    @IBAction func HighRateButton(_ sender: Any) {
     }
     
 

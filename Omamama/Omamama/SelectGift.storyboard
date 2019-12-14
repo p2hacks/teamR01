@@ -10,7 +10,7 @@
         <!--Select Gift View Controller-->
         <scene sceneID="lQG-se-7aN">
             <objects>
-                <viewController id="TEU-de-STj" customClass="SelectGiftViewController" customModule="Omamama" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="selectgift" id="TEU-de-STj" customClass="SelectGiftViewController" customModule="Omamama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wgf-Tr-3o6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,17 +32,20 @@
                                     <action selector="SelectButton:" destination="TEU-de-STj" eventType="touchUpInside" id="ys2-zD-ya2"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHo-Wr-yvr" userLabel="BlackOut">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHo-Wr-yvr" userLabel="BlackOut">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="クリスマスまであと、" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSU-rc-yAl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="クリスマスまであと、" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSU-rc-yAl">
                                         <rect key="frame" x="71" y="119" width="233" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQj-U6-oGX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQj-U6-oGX">
                                         <rect key="frame" x="140" y="315" width="94" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -70,11 +73,6 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="aQj-U6-oGX" firstAttribute="top" secondItem="FSU-rc-yAl" secondAttribute="bottom" constant="155" id="Ov4-oJ-ZAS"/>
-                                    <constraint firstAttribute="trailing" secondItem="FSU-rc-yAl" secondAttribute="trailing" constant="63" id="UFk-Nb-rKk"/>
-                                    <constraint firstItem="FSU-rc-yAl" firstAttribute="leading" secondItem="xHo-Wr-yvr" secondAttribute="leading" constant="63" id="hj6-s5-ZBU"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

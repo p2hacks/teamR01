@@ -9,13 +9,13 @@
 import UIKit
 import WebKit
 
-class SendGiftViewController: UIViewController,  WKNavigationDelegate{
+final class SendGiftViewController: UIViewController,  WKNavigationDelegate{
 //URL:http://images-jp.amazon.com/images/P/[ASIN,ISBN].[国コード].[画像の種類].jpg
     
-    @IBOutlet weak var BackgroundImage: UIImageView!
+    @IBOutlet final weak var BackgroundImage: UIImageView!
     
-    @IBOutlet weak var PresentImage: UIImageView!
-    @IBOutlet weak var PaidAnnounce: UIImageView!
+    @IBOutlet final weak var PresentImage: UIImageView!
+    @IBOutlet final weak var PaidAnnounce: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let Asin:String = "test"
@@ -31,7 +31,9 @@ class SendGiftViewController: UIViewController,  WKNavigationDelegate{
     @IBAction func SendPresentButton(_ sender: Any) {
         //TODO: 画面遷移の実装
         //present
-        PaidAnnounce.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.PaidAnnounce.isHidden = false
+        }
         
     }
     
