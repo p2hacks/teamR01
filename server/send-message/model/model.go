@@ -4,8 +4,8 @@ type Message struct {
 	//gorm.Model
 	//Model specify the model
 	//you would like to run db operions
-	ID      string `json:"id"`
-	MESSAGE string `json:"message"`
+	ID      string
+	MESSAGE string
 }
 
 type Status struct {
