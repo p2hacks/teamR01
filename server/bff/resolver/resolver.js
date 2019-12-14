@@ -10,5 +10,8 @@ module.exports = {
         setPresent: async (_source, { id, asin },{ dataSources }) => {
             return dataSources.PresentAPI.setPresent(id, asin);
         },
+        setMessage: async (_source, { id, message },{ dataSources }) => {
+            return dataSources.SendMessageAPI.setMessage(id, message);
+        },
     },
 };
