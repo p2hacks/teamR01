@@ -9,8 +9,12 @@ module.exports = gql`
   type Rate {
     STATUS: Boolean
   }
+  type Present {
+    STATUS: Boolean!
+  }
   type Query {
     setUser(phone: String!): User
     setRate(id: String!, rate: Int!): Rate
+    setPresent(id: String, asin: String!): Present
   }
 `;

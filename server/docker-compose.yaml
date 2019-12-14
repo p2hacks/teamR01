@@ -1,7 +1,7 @@
 version: '3'
 services:
         mysql:
-                image: mysql:5.7
+                image: mysql:8.0.18
                 ports:
                         - 3306:3306
                 volumes:
@@ -36,6 +36,18 @@ services:
                         - DB_NAME=omamama
                 depends_on:
                         - 'mysql'
+        present:
+                build: ./present
+                ports:
+                        - 9002:9002
+                environment:
+                        - DB_USER=omamama
+                        - DB_PASS=8Q*AvwuZKNcqdEPKJWy6ZHyNw_Th-fj_BRdtT_L-EUKQmGXVD3dF7ZsKVa4YfP!n
+                        - DB_IP=mysql
+                        - DB_PORT=3306
+                        - DB_NAME=omamama
+                depends_on:
+                        - 'mysql'
         bff-api:
                 build: ./bff
                 ports:
@@ -43,6 +55,8 @@ services:
                 environment:
                         - USER=http://user:9000
                         - RATE=http://rate:9001
+                        - PRESENT=http://present:9002
                 depends_on:
                         - 'user'
                         - 'rate'
+                        - 'present'
