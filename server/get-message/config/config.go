@@ -1,6 +1,7 @@
 package config
 
 import (
+	"os"
 	"fmt"
 )
 
@@ -17,12 +18,12 @@ var c dataBaseConfig
 const accessTokenTemplate = "%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local"
 
 func init() {
-	c = dataBaseConfig{
-		User: "root",
-		Pass: "p2hack",
-		IP:   "127.0.0.1",
-		Port: "3306",
-		Name: "omamama",
+	c = dataBaseConfig {
+		User: os.Getenv("DB_USER"),
+		Pass: os.Getenv("BPASS"),
+		IP	: os.Getenv("DB_IP"),
+		Port: os.Getenv("DB_PORT"),
+		Name: os.Getenv("DB_NAME")
 	}
 	err := checkElements(c)
 	if err != nil {
@@ -52,24 +53,3 @@ func checkElements(c dataBaseConfig) error {
 func GetConnectionToken() string {
 	return fmt.Sprintf(accessTokenTemplate, c.User, c.Pass, c.IP, c.Port, c.Name)
 }
-
-/***debug template
-**
-c = dataBaseConfig {
-		User: "root",
-		Pass: "p2hack",
-		IP	: "127.0.0.1",
-		Port: "3306",
-		Name: "omamama"
-	}
-**
-**
-	c = dataBaseConfig {
-		User: os.Getenv("DB_USER"),
-		Pass: os.Getenv("BPASS"),
-		IP	: os.Getenv("DB_IP"),
-		Port: os.Getenv("DB_PORT"),
-		Name: os.Getenv("DB_NAME")
-	}
-**
-***/

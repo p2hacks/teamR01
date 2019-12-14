@@ -43,7 +43,7 @@ func (ctrl *IsController) MessageHandler(c echo.Context) error {
 	res.MESSAGE = message.MESSAGE
 	res.STATUS = true
 
-	return c.JSON(http.StatusOK, message.MESSAGE)
+	return c.JSON(http.StatusOK, res)
 }
 
 func InitController(db *gorm.DB) IsController {
