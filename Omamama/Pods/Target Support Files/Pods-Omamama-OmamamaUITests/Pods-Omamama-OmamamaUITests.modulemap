@@ -1,0 +1,6 @@
+framework module Pods_Omamama_OmamamaUITests {
+  umbrella header "Pods-Omamama-OmamamaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
