@@ -13,5 +13,8 @@ module.exports = {
         setMessage: async (_source, { id, message },{ dataSources }) => {
             return dataSources.SendMessageAPI.setMessage(id, message);
         },
+        getPair: async (_source, { id },{ dataSources }) => {
+            return dataSources.GetPairAPI.getPair(id);
+        },
     },
 };

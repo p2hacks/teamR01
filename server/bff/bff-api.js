@@ -47,6 +47,20 @@ class PresentAPI extends RESTDataSource {
   }
 }
 
+class GetPairAPI extends RESTDataSource {
+  constructor() {
+    super();
+    this.baseURL = process.env.PAIR;
+  }
+
+  async getPair(userId) {
+    return this.post(
+        `set`,
+        { id: userId },
+      );
+  }
+}
+
 class SendMessageAPI extends RESTDataSource {
   constructor() {
     super();
@@ -72,6 +86,7 @@ const server = new ApolloServer({
         RateAPI: new RateAPI(),
         PresentAPI: new PresentAPI(),
         SendMessageAPI: new SendMessageAPI(),
+        GetPairAPI: new GetPairAPI(),
     };
   },
 });
