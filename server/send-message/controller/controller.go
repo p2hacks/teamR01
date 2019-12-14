@@ -25,7 +25,7 @@ func (ctrl *IsController) MessageHandler(c echo.Context) error {
 		res.STATUS = false
 		return c.JSON(http.StatusBadRequest, res)
 	}
-	ctrl.DB.Create(&post)
+	ctrl.DB.Table("messages").Create(&post)
 	res.STATUS = true
 	return c.JSON(http.StatusOK, res)
 }
