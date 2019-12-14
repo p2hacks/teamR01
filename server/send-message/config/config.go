@@ -18,7 +18,7 @@ var c dataBaseConfig
 const accessTokenTemplate = "%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local"
 
 func init() {
-	/*
+	
 	//コンテナ化前デバック用
 	c = dataBaseConfig {
 		User: "root",
@@ -27,7 +27,7 @@ func init() {
 		Port: "3306",
 		Name: "omamama",
 	}
-	*/
+	/*
 	c = dataBaseConfig {
 		User: os.Getenv("DB_USER"),
 		Pass: os.Getenv("DB_PASS"),
@@ -35,7 +35,7 @@ func init() {
 		Port: os.Getenv("DB_PORT"),
 		Name: os.Getenv("DB_NAME"),
 	}
-
+	*/
 	err := checkElements(c)
 	if err != nil {
 		// TODO: Faild to get env Value 

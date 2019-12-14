@@ -28,7 +28,7 @@ func (ctrl *IsController) MessageHandler(c echo.Context)error{
 	}
 	ctrl.DB.Create(&post)//??
 	res.STATUS = true 
-	return c.JSON(http.StatusOK,res.STATUS)
+	return c.JSON(http.StatusOK,res)
 }
 
 func InitController(db *gorm.DB) IsController {
