@@ -18,15 +18,15 @@ POSTでユーザーIDと送るメッセージを受け取る
 */
 
 func (ctrl *IsController) MessageHandler(c echo.Context)error{
-	var db *gorm.DB
+	//var db *gorm.DB
 	var post model.User
 	var res model.Status
-	err := c.Bind(post)
+	err := c.Bind(&post)
 	if err != nil {
 		res.STATUS = false
 		return c.JSON(http.StatusBadRequest, res.STATUS)
 	}
-	db.Create(&post)//??
+	ctrl.DB.Create(&post)//??
 	res.STATUS = true 
 	return c.JSON(http.StatusOK,res.STATUS)
 }

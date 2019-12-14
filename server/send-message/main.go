@@ -17,7 +17,7 @@ func main(){
 	e.Use(middleware.Recover())
 	e.Use(middleware.Logger())
 	//TODO データベースの初期化
-	db, err :=dbconnect.InitDB()
+	db, err := dbconnect.InitDB()
 	if err != nil{
 	}
 	ctrl = controller.InitController(db)

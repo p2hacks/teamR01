@@ -4,11 +4,11 @@ import (
 	"fmt"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"time"
-
 	"github.com/jinzhu/gorm"
 	"github.com/p2hacks/teamR01/server/send-message/config"
-	"github.com/p2hacks/teamR01/server/send-message/controller"
+	//"github.com/p2hacks/teamR01/server/send-message/controller"
 	"github.com/p2hacks/teamR01/server/send-message/model"
+	//"github.com/labstack/echo"
 )
 
 func InitDB() (*gorm.DB, error) {
@@ -31,10 +31,7 @@ func InitDB() (*gorm.DB, error) {
 
 		count++
 	}
-
+	db.LogMode(true)
 	return nil, err
 }
 
-func InitController(db *gorm.DB) controller.IsController {
-	return controller.IsController{DB: db}
-}
