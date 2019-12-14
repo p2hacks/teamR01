@@ -48,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="BackgroundImage" destination="RiV-4r-4pg" id="bGx-2T-WoO"/>
+                        <outlet property="PaidAnnounce" destination="jtO-aE-JJf" id="Vym-QQ-1ix"/>
                         <outlet property="PresentImage" destination="aff-mD-Vwv" id="jTt-eZ-LkB"/>
                     </connections>
                 </viewController>

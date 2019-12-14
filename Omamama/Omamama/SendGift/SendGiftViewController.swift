@@ -15,12 +15,14 @@ class SendGiftViewController: UIViewController,  WKNavigationDelegate{
     @IBOutlet weak var BackgroundImage: UIImageView!
     
     @IBOutlet weak var PresentImage: UIImageView!
+    @IBOutlet weak var PaidAnnounce: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let Asin:String = "test"
-        var image:UIImage = GetImageByAmazon(url: "http://images-jp.amazon.com/images/P/" + Asin + ".09.MZZZZZZZ")
+        let image:UIImage = GetImageByAmazon(url: "http://images-jp.amazon.com/images/P/" + Asin + ".09.MZZZZZZZ")
         MakeFilter(image: image)
         PresentImage.image = image
+        PaidAnnounce.isHidden = true
         // Do any additional setup after loading the view.
         
         //noma
@@ -29,6 +31,7 @@ class SendGiftViewController: UIViewController,  WKNavigationDelegate{
     @IBAction func SendPresentButton(_ sender: Any) {
         //TODO: 画面遷移の実装
         //present
+        PaidAnnounce.isHidden = false
         
     }
     
