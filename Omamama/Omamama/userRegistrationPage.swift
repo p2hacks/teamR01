@@ -58,6 +58,7 @@ struct userRegistrationView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Spacer()
             Button(action: {}){
+                
                 Text("次へ")
                     .font(.body)
                     .frame(width: 80)

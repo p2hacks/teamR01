@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Select Gift View Controller-->
         <scene sceneID="lQG-se-7aN">
             <objects>
-                <viewController id="TEU-de-STj" sceneMemberID="viewController">
+                <viewController id="TEU-de-STj" customClass="SelectGiftViewController" customModule="Omamama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wgf-Tr-3o6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,19 +24,78 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-i1-xDM">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-i1-xDM">
+                                <rect key="frame" x="45" y="586" width="285" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="SelectButton" image="selectpresentbutton"/>
+                                <connections>
+                                    <action selector="SelectButton:" destination="TEU-de-STj" eventType="touchUpInside" id="ys2-zD-ya2"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHo-Wr-yvr" userLabel="BlackOut">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="クリスマスまであと、" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSU-rc-yAl">
+                                        <rect key="frame" x="71" y="119" width="233" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQj-U6-oGX">
+                                        <rect key="frame" x="140" y="315" width="94" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12月15日になると" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVY-iW-0KO">
+                                        <rect key="frame" x="117" y="524" width="140" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="プレゼントを贈ることが" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMT-Z6-Ngj">
+                                        <rect key="frame" x="92" y="553" width="191" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="できるようになります" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhe-G6-Qmz">
+                                        <rect key="frame" x="100" y="582" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="aQj-U6-oGX" firstAttribute="top" secondItem="FSU-rc-yAl" secondAttribute="bottom" constant="155" id="Ov4-oJ-ZAS"/>
+                                    <constraint firstAttribute="trailing" secondItem="FSU-rc-yAl" secondAttribute="trailing" constant="63" id="UFk-Nb-rKk"/>
+                                    <constraint firstItem="FSU-rc-yAl" firstAttribute="leading" secondItem="xHo-Wr-yvr" secondAttribute="leading" constant="63" id="hj6-s5-ZBU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Zi2-CE-dX5"/>
                     </view>
+                    <connections>
+                        <outlet property="BlackOutLabel_12_15" destination="eVY-iW-0KO" id="d6Z-me-iKB"/>
+                        <outlet property="BlackOutLabel_can" destination="Uhe-G6-Qmz" id="bok-oc-SZZ"/>
+                        <outlet property="BlackOutLabel_day" destination="aQj-U6-oGX" id="dTk-5m-jxC"/>
+                        <outlet property="BlackOutLabel_present" destination="DMT-Z6-Ngj" id="8x1-Rx-OzP"/>
+                        <outlet property="BlackOutView" destination="xHo-Wr-yvr" id="c7P-Vq-QY2"/>
+                        <outlet property="BlackoutLabel_1" destination="FSU-rc-yAl" id="8V8-Ri-Sl2"/>
+                        <outlet property="GetAmazonPage" destination="57B-bj-BPB" id="h8J-e6-m6W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WS-J3-h1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="93.103448275862078"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="selectpresentbutton" width="470" height="84"/>
+    </resources>
 </document>

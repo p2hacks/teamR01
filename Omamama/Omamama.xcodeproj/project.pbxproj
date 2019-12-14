@@ -16,6 +16,9 @@
 		02878AED239C15680062704E /* OmamamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AEC239C15680062704E /* OmamamaUITests.swift */; };
 		B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */; };
 		B01A677823A4BBD70009D2C1 /* SelectGift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */; };
+		B01A678623A4CD850009D2C1 /* SelectGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A678523A4CD850009D2C1 /* SelectGiftViewController.swift */; };
+		B01A678923A4DBB70009D2C1 /* SendGift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01A678823A4DBB70009D2C1 /* SendGift.storyboard */; };
+		B01A678B23A4DBF30009D2C1 /* SendGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A678A23A4DBF30009D2C1 /* SendGiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		02878AEE239C15680062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userRegistrationPage.swift; sourceTree = "<group>"; };
 		B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectGift.storyboard; sourceTree = "<group>"; };
+		B01A678523A4CD850009D2C1 /* SelectGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGiftViewController.swift; sourceTree = "<group>"; };
+		B01A678823A4DBB70009D2C1 /* SendGift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendGift.storyboard; sourceTree = "<group>"; };
+		B01A678A23A4DBF30009D2C1 /* SendGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendGiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				02878ACC239C15660062704E /* SceneDelegate.swift */,
 				B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */,
 				B01A677623A4BA8C0009D2C1 /* SelectGift */,
+				B01A678723A4DB6D0009D2C1 /* SendGift */,
 				02878AD0239C15670062704E /* Assets.xcassets */,
 				02878AD5239C15670062704E /* LaunchScreen.storyboard */,
 				02878AD8239C15670062704E /* Info.plist */,
@@ -143,8 +150,18 @@
 			isa = PBXGroup;
 			children = (
 				B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */,
+				B01A678523A4CD850009D2C1 /* SelectGiftViewController.swift */,
 			);
 			name = SelectGift;
+			sourceTree = "<group>";
+		};
+		B01A678723A4DB6D0009D2C1 /* SendGift */ = {
+			isa = PBXGroup;
+			children = (
+				B01A678823A4DBB70009D2C1 /* SendGift.storyboard */,
+				B01A678A23A4DBF30009D2C1 /* SendGiftViewController.swift */,
+			);
+			path = SendGift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +270,7 @@
 			files = (
 				02878AD7239C15670062704E /* LaunchScreen.storyboard in Resources */,
 				02878AD4239C15670062704E /* Preview Assets.xcassets in Resources */,
+				B01A678923A4DBB70009D2C1 /* SendGift.storyboard in Resources */,
 				B01A677823A4BBD70009D2C1 /* SelectGift.storyboard in Resources */,
 				02878AD1239C15670062704E /* Assets.xcassets in Resources */,
 			);
@@ -280,7 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */,
+				B01A678B23A4DBF30009D2C1 /* SendGiftViewController.swift in Sources */,
 				02878ACB239C15660062704E /* AppDelegate.swift in Sources */,
+				B01A678623A4CD850009D2C1 /* SelectGiftViewController.swift in Sources */,
 				02878ACD239C15660062704E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
