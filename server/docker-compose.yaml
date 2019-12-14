@@ -42,5 +42,7 @@ services:
                         - 4000:4000
                 environment:
                         - USER=http://user:9000
+                        - RATE=http://rate:9001
                 depends_on:
                         - 'user'
+                        - 'rate'
