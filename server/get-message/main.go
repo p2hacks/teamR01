@@ -23,7 +23,7 @@ func main() {
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "This is Get-Message API")
 	})
-	e.POST("/message", ctrl.MessageHandler)
+	e.POST("/set", ctrl.MessageHandler)
 	//TODO サーバーを立ち上げる
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start(":9006"))
 }

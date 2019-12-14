@@ -3,6 +3,7 @@ package config
 import (
 	"os"
 	"fmt"
+	"log"
 )
 
 type dataBaseConfig struct {
@@ -20,14 +21,14 @@ const accessTokenTemplate = "%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc
 func init() {
 	c = dataBaseConfig {
 		User: os.Getenv("DB_USER"),
-		Pass: os.Getenv("BPASS"),
+		Pass: os.Getenv("DB_PASS"),
 		IP	: os.Getenv("DB_IP"),
 		Port: os.Getenv("DB_PORT"),
-		Name: os.Getenv("DB_NAME")
+		Name: os.Getenv("DB_NAME"),
 	}
 	err := checkElements(c)
 	if err != nil {
-		// TODO: Faild to get nv Value
+		log.Fatal(err)
 	}
 }
 

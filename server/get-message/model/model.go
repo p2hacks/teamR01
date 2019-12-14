@@ -15,6 +15,6 @@ type Request struct {
 }
 
 type Response struct {
-	MESSAGE string
 	STATUS  bool
+	MESSAGE string
 }
