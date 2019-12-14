@@ -16,7 +16,6 @@
 		02878AED239C15680062704E /* OmamamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AEC239C15680062704E /* OmamamaUITests.swift */; };
 		B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */; };
 		B01A677823A4BBD70009D2C1 /* SelectGift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */; };
-		B01A677C23A4BC450009D2C1 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = B01A677B23A4BC450009D2C1 /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		02878AEE239C15680062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userRegistrationPage.swift; sourceTree = "<group>"; };
 		B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectGift.storyboard; sourceTree = "<group>"; };
-		B01A677B23A4BC450009D2C1 /* Resources */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Resources; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +101,6 @@
 		02878AC9239C15660062704E /* Omamama */ = {
 			isa = PBXGroup;
 			children = (
-				B01A677B23A4BC450009D2C1 /* Resources */,
 				02878ACA239C15660062704E /* AppDelegate.swift */,
 				02878ACC239C15660062704E /* SceneDelegate.swift */,
 				B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */,
@@ -258,7 +255,6 @@
 				02878AD4239C15670062704E /* Preview Assets.xcassets in Resources */,
 				B01A677823A4BBD70009D2C1 /* SelectGift.storyboard in Resources */,
 				02878AD1239C15670062704E /* Assets.xcassets in Resources */,
-				B01A677C23A4BC450009D2C1 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
