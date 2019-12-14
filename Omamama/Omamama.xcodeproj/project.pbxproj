@@ -16,6 +16,7 @@
 		02878AED239C15680062704E /* OmamamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02878AEC239C15680062704E /* OmamamaUITests.swift */; };
 		B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */; };
 		B01A677823A4BBD70009D2C1 /* SelectGift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */; };
+		B01A678623A4CD850009D2C1 /* SelectGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A678523A4CD850009D2C1 /* SelectGiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		02878AEE239C15680062704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B01A677423A4BA3D0009D2C1 /* userRegistrationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userRegistrationPage.swift; sourceTree = "<group>"; };
 		B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectGift.storyboard; sourceTree = "<group>"; };
+		B01A678523A4CD850009D2C1 /* SelectGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				B01A677723A4BBD70009D2C1 /* SelectGift.storyboard */,
+				B01A678523A4CD850009D2C1 /* SelectGiftViewController.swift */,
 			);
 			name = SelectGift;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				B01A677523A4BA3D0009D2C1 /* userRegistrationPage.swift in Sources */,
 				02878ACB239C15660062704E /* AppDelegate.swift in Sources */,
+				B01A678623A4CD850009D2C1 /* SelectGiftViewController.swift in Sources */,
 				02878ACD239C15660062704E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
