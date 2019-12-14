@@ -22,6 +22,8 @@ class SendGiftViewController: UIViewController,  WKNavigationDelegate{
         MakeFilter(image: image)
         PresentImage.image = image
         // Do any additional setup after loading the view.
+        
+        //noma
     }
     
     @IBAction func SendPresentButton(_ sender: Any) {
