@@ -72,6 +72,18 @@ services:
                         - DB_NAME=omamama
                 depends_on:
                         - 'mysql'
+        card-info:
+                build: ./card-info
+                ports:
+                        - 9005:9005
+                environment:
+                        - DB_USER=omamama
+                        - DB_PASS=8Q*AvwuZKNcqdEPKJWy6ZHyNw_Th-fj_BRdtT_L-EUKQmGXVD3dF7ZsKVa4YfP!n
+                        - DB_IP=mysql
+                        - DB_PORT=3306
+                        - DB_NAME=omamama
+                depends_on:
+                        - 'mysql'
         bff-api:
                 build: ./bff
                 ports:
@@ -82,9 +94,11 @@ services:
                         - PRESENT=http://present:9002
                         - SEND_MESSAGE=http://send-message:9003
                         - PAIR=http://pair:9004
+                        - CARD_INFO=http://card-info:9005
                 depends_on:
                         - 'user'
                         - 'rate'
                         - 'present'
                         - 'send-message'
                         - 'pair'
+                        - 'card-info'
