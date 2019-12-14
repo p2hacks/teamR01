@@ -25,7 +25,7 @@ func (ctrl *IsController)SetUserInfo(context *gin.Context) {
 			STATUS: false,
 			ID: "",
 		}
-		context.JSON(http.StatusInternalServerError, gin.H{"setUser": setUser})
+		context.JSON(http.StatusInternalServerError, setUser)
 		return
 	}
 
@@ -35,7 +35,7 @@ func (ctrl *IsController)SetUserInfo(context *gin.Context) {
 			STATUS: false,
 			ID: "",
 		}
-		context.JSON(http.StatusInternalServerError, gin.H{"setUser": setUser})
+		context.JSON(http.StatusInternalServerError, setUser)
 		return
 	}
 
