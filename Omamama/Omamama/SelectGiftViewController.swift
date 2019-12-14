@@ -28,6 +28,7 @@ final class SelectGiftViewController: UIViewController, WKNavigationDelegate {
     }
     @IBOutlet weak var BlackOutLabel_day: UILabel!{
         didSet{
+            BlackOutLabel_day.text = String(15 - day())
             BlackOutLabel_day.textColor = UIColor.white
         }
     }

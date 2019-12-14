@@ -66,7 +66,7 @@ struct userRegistrationView: View {
                     .cornerRadius(20)
             }
             .padding()
-            .shadow(color: Color.gray, radius: 5.0, x: 5.0, y: 5.0)
+            .shadow(color: Color.gray, radius: 5, x: 5, y: 5)
         }
     }
 }
