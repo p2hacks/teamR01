@@ -15,36 +15,36 @@ final class SelectGiftViewController: UIViewController, WKNavigationDelegate {
     private var alertController : UIAlertController!
     
     //define black screen
-    @IBOutlet weak var BlackOutView: UIView!{
+    @IBOutlet private weak var BlackOutView: UIView!{
         didSet{
             BlackOutView.backgroundColor = UIColor.black
             BlackOutView.alpha = 0.8
         }
     }
-    @IBOutlet weak var BlackOutLabel_christmas: UILabel!{
+    @IBOutlet private weak var BlackOutLabel_christmas: UILabel!{
         didSet{
             BlackOutLabel_christmas.textColor = UIColor.white
         }
     }
-    @IBOutlet weak var BlackOutLabel_day: UILabel!{
+    @IBOutlet private weak var BlackOutLabel_day: UILabel!{
         didSet{
-            BlackOutLabel_day.text = String(15 - day())
+            //BlackOutLabel_day.text = String(15 - day())
             BlackOutLabel_day.textColor = UIColor.white
         }
     }
-    @IBOutlet weak var BlackOutLabel_12_15: UILabel!{
+    @IBOutlet private weak var BlackOutLabel_12_15: UILabel!{
         didSet{
             BlackOutLabel_12_15.textColor = UIColor.white
         }
     }
     
-    @IBOutlet weak var BlackOutLabel_present: UILabel!{
+    @IBOutlet private weak var BlackOutLabel_present: UILabel!{
         didSet{
             BlackOutLabel_present.textColor = UIColor.white
         }
     }
     
-    @IBOutlet weak var BlackOutLabel_can: UILabel!{
+    @IBOutlet private weak var BlackOutLabel_can: UILabel!{
         didSet{
             BlackOutLabel_can.textColor = UIColor.white
         }
@@ -77,6 +77,14 @@ final class SelectGiftViewController: UIViewController, WKNavigationDelegate {
 //TODO: send server
                 print(arr[5])
                 self.BlackOutView.isHidden = false
+                
+//TODO:なんかもう少しmうまいことできるやろ、、、
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                    // 0.5秒後に実行したい処理
+//                    let storyboard: UIStoryboard = self.storyboard!
+//                    let sendgiftView = storyboard.instantiateViewController(withIdentifier: "sendgift") as! SendGiftViewController
+//                    self.present(sendgiftView, animated: true, completion: nil)
+//                }
                 }
                }
             )

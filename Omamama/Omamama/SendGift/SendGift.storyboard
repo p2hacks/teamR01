@@ -10,7 +10,7 @@
         <!--Send Gift View Controller-->
         <scene sceneID="3x4-cO-5eY">
             <objects>
-                <viewController id="GOQ-hr-1xL" customClass="SendGiftViewController" customModule="Omamama" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sendgift" id="GOQ-hr-1xL" customClass="SendGiftViewController" customModule="Omamama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QSd-kz-4o8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
