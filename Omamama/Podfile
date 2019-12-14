@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Omamama' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  pod "Apollo"
+  use_frameworks!
+
+  # Pods for Omamama
+
+  target 'OmamamaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'OmamamaUITests' do
+    # Pods for testing
+  end
+
+end
