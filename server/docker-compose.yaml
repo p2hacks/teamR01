@@ -48,6 +48,18 @@ services:
                         - DB_NAME=omamama
                 depends_on:
                         - 'mysql'
+        send-message:
+                build: ./send-message
+                ports:
+                        - 9003:9003
+                environment:
+                        - DB_USER=omamama
+                        - DB_PASS=8Q*AvwuZKNcqdEPKJWy6ZHyNw_Th-fj_BRdtT_L-EUKQmGXVD3dF7ZsKVa4YfP!n
+                        - DB_IP=mysql
+                        - DB_PORT=3306
+                        - DB_NAME=omamama
+                depends_on:
+                        - 'mysql'
         bff-api:
                 build: ./bff
                 ports:
@@ -56,7 +68,9 @@ services:
                         - USER=http://user:9000
                         - RATE=http://rate:9001
                         - PRESENT=http://present:9002
+                        - SEND_MESSAGE=http://send-message:9003
                 depends_on:
                         - 'user'
                         - 'rate'
                         - 'present'
+                        - 'send-message'

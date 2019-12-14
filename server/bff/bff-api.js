@@ -47,6 +47,20 @@ class PresentAPI extends RESTDataSource {
   }
 }
 
+class SendMessageAPI extends RESTDataSource {
+  constructor() {
+    super();
+    this.baseURL = process.env.SEND_MESSAGE;
+  }
+
+  async setMessage(userId, msg) {
+    return this.post(
+        `set`,
+        { id: userId, message: msg },
+      );
+  }
+}
+
 // graphQLの初期化
 const server = new ApolloServer({
   typeDefs,
@@ -57,6 +71,7 @@ const server = new ApolloServer({
         UserAPI: new UserAPI(),
         RateAPI: new RateAPI(),
         PresentAPI: new PresentAPI(),
+        SendMessageAPI: new SendMessageAPI(),
     };
   },
 });
