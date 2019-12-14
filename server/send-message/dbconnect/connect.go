@@ -24,7 +24,7 @@ func InitDB() (*gorm.DB, error) {
 		}
 		db, err = gorm.Open("mysql", token)
 		if err == nil {
-			db.AutoMigrate(&model.User{})
+			db.AutoMigrate(&model.Message{})
 			return db, nil
 		}
 		time.Sleep(3 * time.Second)

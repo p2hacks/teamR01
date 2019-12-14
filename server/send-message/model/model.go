@@ -5,7 +5,7 @@ import (
 	ithub.com/jinzhu/gorm"
 */
 
-type User struct {
+type Message struct {
 	//gorm.Model
 	//Model specify the model
 	//you would like to run db operions
