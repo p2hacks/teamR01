@@ -19,11 +19,15 @@ module.exports = gql`
     STATUS: Boolean!
     ASIN: String
   }
+  type SetCard {
+    STATUS: Boolean!
+  }
   type Query {
     setUser(phone: String!): User
     setRate(id: String!, rate: Int!): Rate
     setPresent(id: String, asin: String!): Present
     setMessage(id: String!, message: String): SendMessage
     getPair(id: String!): GetPair
+    setCardInfo(id: String!, , num: String!, year: String!, month: String!, code: String!, name: String!): SetCard!
   }
 `;

@@ -61,6 +61,20 @@ class GetPairAPI extends RESTDataSource {
   }
 }
 
+class SetCardInfoAPI extends RESTDataSource {
+  constructor() {
+    super();
+    this.baseURL = process.env.CARD_INFO;
+  }
+
+  async setCardInfo(id, num, year, month, code, name) {
+    return this.post(
+        `set`,
+        { id: id, num: num, year: year, month: month, code: code, name: name },
+      );
+  }
+}
+
 class SendMessageAPI extends RESTDataSource {
   constructor() {
     super();
@@ -87,6 +101,7 @@ const server = new ApolloServer({
         PresentAPI: new PresentAPI(),
         SendMessageAPI: new SendMessageAPI(),
         GetPairAPI: new GetPairAPI(),
+        SetCardInfoAPI: new SetCardInfoAPI(),
     };
   },
 });
