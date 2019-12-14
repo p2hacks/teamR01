@@ -1,12 +1,10 @@
 package main
 
 import(
-	//"github.com/jinzhu/gorm"
+	"net/http"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	"github.com/p2hacks/teamR01/server/send-message/controller"
-	//"github.com/p2hacks/teamR01/server/send-message/model"
-	//"github.com/p2hacks/teamR01/server/send-message/config"
 	"github.com/p2hacks/teamR01/server/send-message/dbconnect"
 )
 
@@ -22,8 +20,10 @@ func main(){
 	}
 	ctrl = controller.InitController(db)
 	//TODO ルーティング
-	//e.GET("/",hogehoge)//bff用
-	e.POST("/send",ctrl.MessageHandler)//クライアントからuser_id,messageを受け取るルータ
+	e.GET("/", func(c echo.Context) error {
+        return c.String(http.StatusOK, "This is Send-message API")
+    })
+	e.POST("/set",ctrl.MessageHandler)//クライアントからuser_id,messageを受け取るルータ
 	//TODO サーバーを立ち上げる
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start(":9003"))
 }

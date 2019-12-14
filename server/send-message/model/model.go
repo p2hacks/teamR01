@@ -1,10 +1,5 @@
 package model
 
-/*
-import (
-	ithub.com/jinzhu/gorm"
-*/
-
 type Message struct {
 	//gorm.Model
 	//Model specify the model

@@ -6,9 +6,7 @@ import (
 	"time"
 	"github.com/jinzhu/gorm"
 	"github.com/p2hacks/teamR01/server/send-message/config"
-	//"github.com/p2hacks/teamR01/server/send-message/controller"
 	"github.com/p2hacks/teamR01/server/send-message/model"
-	//"github.com/labstack/echo"
 )
 
 func InitDB() (*gorm.DB, error) {

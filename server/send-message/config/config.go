@@ -1,8 +1,9 @@
 package config
 
 import(
-	//"os"
+	"os"
 	"fmt"
+	"log"
 )
 
 type dataBaseConfig struct {
@@ -18,16 +19,7 @@ var c dataBaseConfig
 const accessTokenTemplate = "%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local"
 
 func init() {
-	
-	//コンテナ化前デバック用
-	c = dataBaseConfig {
-		User: "root",
-		Pass: "p2hack",
-		IP	: "127.0.0.1",
-		Port: "3306",
-		Name: "omamama",
-	}
-	/*
+
 	c = dataBaseConfig {
 		User: os.Getenv("DB_USER"),
 		Pass: os.Getenv("DB_PASS"),
@@ -35,28 +27,28 @@ func init() {
 		Port: os.Getenv("DB_PORT"),
 		Name: os.Getenv("DB_NAME"),
 	}
-	*/
+
 	err := checkElements(c)
 	if err != nil {
-		// TODO: Faild to get env Value 
+		log.Fatal(err)
 	}
 }
 
 func checkElements(c dataBaseConfig) error {
 	if c.User == "" {
-		return fmt.Errorf("")
+		return fmt.Errorf("DB_USER value did not exist")
 	}
 	if c.Pass == "" {
-		return fmt.Errorf("")
+		return fmt.Errorf("DB_PASS value did not exist")
 	}
 	if c.IP == "" {
-		return fmt.Errorf("")
+		return fmt.Errorf("DB_IP value did not exist")
 	}
 	if c.Port == "" {
-		return fmt.Errorf("")
+		return fmt.Errorf("DB_POST value did not exist")
 	}
 	if c.Name == "" {
-		return fmt.Errorf("")
+		return fmt.Errorf("DB_NAME value did not exist")
 	}
 	return nil
 }
