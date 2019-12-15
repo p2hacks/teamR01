@@ -1,0 +1,146 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: mysql
+    namespace: omamama
+    labels:
+        name: mysql
+spec:
+    ports:
+    - port: 3306
+      targetPort: 3306
+      protocol: TCP
+    clusterIP: None
+    selector:
+        app: mysql
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: user
+    namespace: omamama
+    labels:
+        name: user
+spec:
+    ports:
+    - port: 9000
+      targetPort: 9000
+      protocol: TCP
+    clusterIP: None
+    selector:
+        app: user
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: rate
+    namespace: omamama
+    labels:
+        name: rate
+spec:
+    ports:
+    - port: 9001
+      targetPort: 9001
+      protocol: TCP
+    clusterIP: None
+    selector:
+        app: rate
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: present
+    namespace: omamama
+    labels:
+        name: present
+spec:
+    ports:
+    - port: 9002
+      targetPort: 9002
+      protocol: TCP
+    clusterIP: None
+    selector:
+        app: present
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: send-message
+    namespace: omamama
+    labels:
+        name: send-message
+spec:
+    ports:
+    - port: 9003
+      targetPort: 9003
+      protocol: TCP
+    clusterIP: None
+    selector:
+        app: send-message
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: pair
+    namespace: omamama
+    labels:
+        name: pair
+spec:
+    ports:
+    - port: 9004
+      targetPort: 9004
+      protocol: TCP
+    clusterIP: None
+    selector:
+        app: pair
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: card-info
+    namespace: omamama
+    labels:
+        name: card-info
+spec:
+    ports:
+    - port: 9005
+      targetPort: 9005
+      protocol: TCP
+    clusterIP: None
+    selector:
+        app: card-info
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: get-message
+    namespace: omamama
+    labels:
+        name: get-message
+spec:
+    ports:
+    - port: 9006
+      targetPort: 9006
+      protocol: TCP
+    clusterIP: None
+    selector:
+        app: get-message
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: graphql
+    namespace: omamama
+    labels:
+        name: graphql
+spec:
+  type: NodePort
+  ports:
+    - port: 4000
+      targetPort: 4000
+      nodePort: 30101
+      protocol: TCP
+  selector:
+    app: graphql
+---
