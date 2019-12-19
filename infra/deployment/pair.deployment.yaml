@@ -1,0 +1,32 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: pair-deployment
+  namespace: omamama
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pair
+  template:
+    metadata:
+      labels:
+        app: pair
+    spec:
+      containers:
+      - name: pair
+        image: omamama/pair:1.1.0
+        env:
+        - name: DB_USER
+          value: omamama
+        - name: DB_PASS
+          value: 8Q*AvwuZKNcqdEPKJWy6ZHyNw_Th-fj_BRdtT_L-EUKQmGXVD3dF7ZsKVa4YfP!n
+        - name: DB_IP
+          value: mysql
+        - name: DB_PORT
+          value: '3306'
+        - name: DB_NAME
+          value: omamama
+        ports:
+          - containerPort: 9004

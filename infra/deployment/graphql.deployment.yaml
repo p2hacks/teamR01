@@ -1,0 +1,36 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: graphql-deployment
+  namespace: omamama
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: graphql
+  template:
+    metadata:
+      labels:
+        app: graphql
+    spec:
+      containers:
+      - name: graphql
+        image: omamama/graphql:1.1.0
+        env:
+        - name: USER
+          value: http://user:9000
+        - name: RATE
+          value: http://rate:9001
+        - name: PRESENT
+          value: http://present:9002
+        - name: SEND_MESSAGE
+          value: http://send-message:9003
+        - name: GET_MESSAGE
+          value: http://get-message:9006
+        - name: PAIR
+          value: http://pair:9004
+        - name: CARD_INFO
+          value: http://card-info:9005
+        ports:
+          - containerPort: 4000
